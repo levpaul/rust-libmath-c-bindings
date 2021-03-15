@@ -13,7 +13,6 @@ fn main() {
     };
 
     let err_res = unsafe { math::math_execute(req) };
-
     println!("230+45 = {} | ERROR={}", unsafe { *req.res }, err_res);
 
     req.cmd = math::math_command_t_math_command_sub;
